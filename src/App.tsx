@@ -1,8 +1,15 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Products from './pages/Products';
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Teste</h1>
-    </>
+    <Router>
+      <div>
+        <Routes>
+          <Route path='/' element={<Products />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
